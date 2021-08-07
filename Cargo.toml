@@ -1,0 +1,28 @@
+[package]
+name = "ttm"
+version = "0.1.0"
+edition = "2018"
+authors = ["Mudox <imudox@gmail.com>"]
+description = "Tmux(line) themes manager"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# cli
+clap = "3.0.0-beta.2"
+
+# file system
+dirs = "3.0.2"
+glob = "0.3.0"
+
+# log
+log = "0.4.14"
+pretty_env_logger = "0.4.0"
+
+# config
+serde = { version = "1.0.126", features = ["derive"] }
+toml = "0.5.8"
+
+[dev-dependencies]
+pretty_assertions = "0.7.2"
+
